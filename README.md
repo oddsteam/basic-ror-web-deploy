@@ -28,4 +28,10 @@ Things you may want to cover:
 ```
 docker build -t basic_ror_web_deploy .
 docker run -p 80:80 -e RAILS_MASTER_KEY=0fc668b95ea47c13900c3b736002ab69 --rm --name basic_ror_web_deploy basic_ror_web_deploy
+docker tag basic_ror_web_deploy dockerhubuser/ror_stuID
+docker push dockerhubuser/ror_stuID
+docker pull dockerhubuser/ror_stuID
+
+docker run -p 80:80 -e RAILS_MASTER_KEY=0fc668b95ea47c13900c3b736002ab69 --rm --name myWebApp dockerhubuser/ror_stuID
+
 ```
