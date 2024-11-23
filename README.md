@@ -27,5 +27,5 @@ Things you may want to cover:
 
 ```
 docker build -t basic_ror_web_deploy .
-docker run -p 80:80 -e RAILS_MASTER_KEY=0fc668b95ea47c13900c3b736002ab69 --name basic_ror_web_deploy basic_ror_web_deploy
+docker run -p 80:80 -e RAILS_MASTER_KEY=0fc668b95ea47c13900c3b736002ab69 --rm --name basic_ror_web_deploy basic_ror_web_deploy
 ```
