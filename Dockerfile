@@ -40,6 +40,8 @@ RUN bundle install && \
     bundle exec bootsnap precompile --gemfile
 
 # Copy application code
+
+ENV MY_ENV=BuiltIT
 COPY . .
 
 # Precompile bootsnap code for faster boot times
